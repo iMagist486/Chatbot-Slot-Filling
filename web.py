@@ -38,7 +38,7 @@ def predict(command, history: Optional[Tuple[str, str]]):
 
 if __name__ == "__main__":
     title = """
-    # slot filling demo
+    # Dialogue Slot Filling Demo
     """
     with gr.Blocks() as demo:
         gr.Markdown(title)
@@ -48,8 +48,8 @@ if __name__ == "__main__":
                 chatbot = gr.Chatbot()
                 user_input = gr.Textbox(show_label=False, placeholder="Input...", container=False)
                 with gr.Row():
-                    submitBtn = gr.Button("Submit", variant="primary")
-                    emptyBtn = gr.Button("Clear History")
+                    submitBtn = gr.Button("🚀Submit", variant="primary")
+                    emptyBtn = gr.Button("🧹Clear History")
             slot_show = gr.Textbox(label="current_slot", lines=20, interactive=False, scale=1)
 
         initial_chain()
